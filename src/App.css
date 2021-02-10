@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #bbbfca;
+  margin-left: 30%;
+  margin-top: 10%;
+  margin-right: 25%;
 }
 
 .App-logo {
@@ -17,7 +23,7 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -35,4 +41,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.drum-pad {
+  width: 50px;
+  background-color: #e8e8e8;
+  padding: 30px;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid #495464;
+  border-radius: 2px 2px;
+  -webkit-border-radius: 2px 2px;
+  -moz-border-radius: 2px 2px;
+  -ms-border-radius: 2px 2px;
+  -o-border-radius: 2px 2px;
+}
+
+.drum-pad:active {
+  background-color: #495464;
+  color: #bbbfca;
+}
+
+#display {
+  display: flex;
+  width: 400px;
+  flex-flow: row wrap;
+}
+
+#drum-machine {
+  padding: 30px;
+}
+
+.title {
+  width: 240px;
+  margin-top: 25px;
 }
