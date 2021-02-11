@@ -62,7 +62,7 @@
   color: #bbbfca;
 }
 
-#display {
+#pads {
   display: flex;
   width: 400px;
   flex-flow: row wrap;
@@ -75,4 +75,10 @@
 .title {
   width: 240px;
   margin-top: 25px;
+}
+
+.sound_name {
+  background-color: #e8e8e8;
+  font-size: 24px;
+  padding: 10px;
 }
