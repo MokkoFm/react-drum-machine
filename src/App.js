@@ -43,9 +43,8 @@ class App extends React.Component {
 
   handleKeyPress(e) {
     sounds.forEach(pad => {
-      // debugger
       if (e.keyCode === pad.keyCode) {
-        const audio = new Audio(pad.src)
+        const audio = document.getElementById(pad.id)
         audio.play();
         this.setState({
           playing: pad.sound,
